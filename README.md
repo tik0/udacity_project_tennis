@@ -46,8 +46,13 @@ The single DDPG agent is inspired by the [bi-pedal DDPG soution](https://github.
 
 ### Run the Report
 
-Run the [Report.ipynb](Report.ipynb) which realizes the training in a Actor-Critic DDPG setup and solves the task in 3404 iterations.
+Run the [Report.ipynb](Report.ipynb) which realizes the training in a Actor-Critic DDPG setup.
 
+## Results
+
+The meta DDPG agent was able to solve the task (i.e. reaching an average score of 0.5) after ca. 3900 iterations.
+However, after 4834 iterations, the agent achived an average score of 1.0 resulting in much more efficient gameplay.
+Both results can be viewd on YouTube: [VIDEO OF meta-DDPG AGENT](https://www.youtube.com/watch?v=ZZWCwvojwZM)
 
 ## Future Ideas
 
