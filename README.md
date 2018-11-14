@@ -38,4 +38,20 @@ The single DDPG agent is inspired by the [bi-pedal DDPG soution](https://github.
 
 ## Getting Started
 
+### Install Instructions
+
+* Please follow the [instructions in the DRLND GitHub repository](https://github.com/udacity/deep-reinforcement-learning#dependencies) to set up a Python environment.
+* By following these instructions, you will install PyTorch, the ML-Agents toolkit, and a few more Python packages required to complete the project.
+* Put all files into the `p3_collab-compet/` folder
+
+### Run the Report
+
 Run the [Report.ipynb](Report.ipynb) which realizes the training in a Actor-Critic DDPG setup and solves the task in 3404 iterations.
+
+
+## Future Ideas
+
+This implementation realizes a single DDPG meta-agent with free communication.
+Therefore, only a single actor and a single critic have been implemented where the observations of both agents have been concatenated and stored to the replay buffer.
+However, more sophisticated multi-agent approaches with multiply actors cold also be implemented as well [MADDPG](https://github.com/openai/maddpg).
+Furthermore, approaches like A2C or A3C could lead to a more stable training, since the achived scores highly depends on the drawn random seeds.
