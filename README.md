@@ -54,9 +54,3 @@ The meta DDPG agent was able to solve the task (i.e. reaching an average score o
 However, after 4834 iterations, the agent achived an average score of 1.0 resulting in much more efficient gameplay.
 Both results can be viewd on YouTube: [VIDEO OF meta-DDPG AGENT](https://www.youtube.com/watch?v=ZZWCwvojwZM)
 
-## Future Ideas
-
-This implementation realizes a single DDPG meta-agent with free communication.
-Therefore, only a single actor and a single critic have been implemented where the observations of both agents have been concatenated and stored to the replay buffer.
-However, more sophisticated multi-agent approaches with multiply actors cold also be implemented as well [MADDPG](https://github.com/openai/maddpg).
-Furthermore, approaches like A2C or A3C could lead to a more stable training, since the achived scores highly depends on the drawn random seeds.
